@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg-color: #0f1115;
+  --text-color: #f1f5f9;
+  --primary-color: #3b82f6;
+  --node-bg: rgba(30, 41, 59, 0.7);
+  --node-border: rgba(148, 163, 184, 0.2);
+  --node-hover-border: rgba(96, 165, 250, 0.8);
+  --edge-color: #475569;
+  --menu-bg: #1e293b;
+}
+
+.light {
+  --bg-color: #f8fafc;
+  --text-color: #0f172a;
+  --node-bg: rgba(255, 255, 255, 0.9);
+  --node-border: rgba(148, 163, 184, 0.5);
+  --node-hover-border: rgba(59, 130, 246, 0.8);
+  --edge-color: #94a3b8;
+  --menu-bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Custom Node styles */
+.mindmap-node {
+  background: var(--node-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--node-border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 20px rgba(59, 130, 246, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 150px;
+  max-width: 320px;
+  text-align: center;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.mindmap-node:hover {
+  border-color: var(--node-hover-border);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4), 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+.mindmap-node.root-node {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: #ffffff;
+  border-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 24px;
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+}
+
+/* Hide default React Flow selection and apply it to our inner node */
+.react-flow__node.selected {
+  outline: none;
+}
+.react-flow__node.selected .mindmap-node {
+  border-color: #60a5fa;
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.6);
+}
+
+.react-flow__handle {
+  opacity: 0; /* Hide handles for cleaner look */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.react-flow {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes slimyWiggle {
+  0% { border-radius: 12px; transform: scale(1); }
+  25% { border-radius: 20px 8px 24px 8px; transform: scale(1.05) skewX(3deg); }
+  50% { border-radius: 8px 24px 8px 20px; transform: scale(0.95) skewX(-3deg); }
+  75% { border-radius: 16px 12px 18px 10px; transform: scale(1.02) skewY(3deg); }
+  100% { border-radius: 12px; transform: scale(1); }
+}
+
+.mindmap-node.colliding {
+  animation: slimyWiggle 0.4s ease-in-out;
+  border-color: #10b981 !important;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.6) !important;
+  background: rgba(16, 185, 129, 0.1) !important;
+}
