@@ -1,4 +1,4 @@
-# 🧠 Magyar Történések MindMap (2006–2026)
+# Magyar Történések MindMap (2006–2026)
 
 [![Next.js](https://img.shields.io/badge/Next.js-14_(App_Router)-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
@@ -11,7 +11,7 @@ Interaktív, böngészőben futó gondolattérkép és adatvizualizációs alkal
 
 ---
 
-## 🌟 Főbb Jellemzők
+## Főbb Jellemzők
 
 - **Interaktív Végtelen Vászon:** Teljes pásztázási (Pan) és nagyítási (Zoom) támogatás egérgörgővel, trackpaddal vagy érintőképernyővel az `@xyflow/react` motor segítségével.
 - **D3-Hierarchy Elrendezés:** Fa-alapú automatikus elrendezési algoritmus (`d3-hierarchy`), amely dinamikusan rendezi a csomópontokat és kapcsolatokat az áttekinthetőség érdekében.
@@ -20,7 +20,7 @@ Interaktív, böngészőben futó gondolattérkép és adatvizualizációs alkal
 
 ---
 
-## 📚 Feldolgozott Témakörök (2006–2026)
+## Feldolgozott Témakörök (2006–2026)
 
 A gondolattérkép az alábbi kulcsfontosságú korszakokat és politikai eseményeket dolgozza fel:
 
@@ -40,7 +40,7 @@ A gondolattérkép az alábbi kulcsfontosságú korszakokat és politikai esemé
 
 ---
 
-## 🛠️ Technológiai Háttér
+## Technológiai Háttér
 
 | Technológia | Verzió | Szerep |
 |:---|:---|:---|
@@ -53,7 +53,7 @@ A gondolattérkép az alábbi kulcsfontosságú korszakokat és politikai esemé
 
 ---
 
-## 🚀 Telepítés és Helyi Futtatás
+## Telepítés és Helyi Futtatás
 
 ### Előfeltételek
 - [Bun](https://bun.sh/) (ajánlott) vagy [Node.js](https://nodejs.org/) (v18+)
@@ -83,7 +83,7 @@ bun start
 
 ---
 
-## 🗂️ Adatstruktúra és Bővítés
+## Adatstruktúra és Bővítés
 
 Az összes esemény és összefüggés a **`src/data/mindmap.json`** fájlban található, fastruktúrában:
 
@@ -111,7 +111,7 @@ Az összes esemény és összefüggés a **`src/data/mindmap.json`** fájlban ta
 
 ---
 
-## 📄 Licenc
+## Licenc
 
 Ez a projekt nyílt forráskódú, és az [MIT Licenc](./LICENSE) szerint szabadon tanulmányozható és továbbfejleszthető.  
 Készítette: **Solti Csongor Péter** ([@CsPS0](https://github.com/CsPS0))
