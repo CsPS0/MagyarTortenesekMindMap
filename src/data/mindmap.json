@@ -6,176 +6,331 @@
       "id": "partpolitika",
       "label": "Pártpolitikai és koalíciós válságok (2006-napjaink)",
       "children": [
-        { 
-          "id": "oszodi-beszed", 
+        {
+          "id": "oszodi-beszed",
           "label": "Őszödi beszéd és 2006-os zavargások",
+          "date": "2006.05.26",
           "children": [
-            { 
-              "id": "oszod-baloldal-osszeomlas", 
+            {
+              "id": "oszod-baloldal-osszeomlas",
               "label": "A politikai bizalom és a baloldal összeomlása",
               "children": [
-                { "id": "oszod-baloldal-vakuum", "label": "Morális és politikai vákuum kialakulása" },
-                { "id": "oszod-baloldal-zuhanas", "label": "A kormánypártok (MSZP–SZDSZ) népszerűségének folyamatos zuhanása" }
+                {
+                  "id": "oszod-baloldal-vakuum",
+                  "label": "Morális és politikai vákuum kialakulása"
+                },
+                {
+                  "id": "oszod-baloldal-zuhanas",
+                  "label": "A kormánypártok (MSZP–SZDSZ) népszerűségének folyamatos zuhanása"
+                }
               ]
             },
-            { 
-              "id": "oszod-ner-megagyazas", 
+            {
+              "id": "oszod-ner-megagyazas",
               "label": "Megágyazás az új rezsimnek (NER)",
               "children": [
-                { "id": "oszod-ner-koveteles", "label": "felerősödik a \"valódi rendszerváltás\" és az új alkotmányt követelők hangja" },
-                { 
-                  "id": "oszod-ner-valszagnarrativa", 
+                {
+                  "id": "oszod-ner-koveteles",
+                  "label": "felerősödik a \"valódi rendszerváltás\" és az új alkotmányt követelők hangja"
+                },
+                {
+                  "id": "oszod-ner-valszagnarrativa",
                   "label": "Orbán Viktor sikeres válságnarratívájának felépítése, amely a posztkommunista rendszer válságaként értelmezi a helyzetet, előkészítve a 2010-es fülkeforradalmat és a Nemzeti Együttműködés Rendszerének (NER) legitimációját.",
                   "children": [
-                    { 
-                      "id": "oszod-ner-korrupcio", 
+                    {
+                      "id": "oszod-ner-korrupcio",
                       "label": "Rendszerszintű korrupció és olagarchizáció",
                       "children": [
-                        { 
-                          "id": "korrupcio-hatorszag", 
+                        {
+                          "id": "korrupcio-hatorszag",
                           "label": "Gazdasági hátország",
                           "children": [
-                            { "id": "korrupcio-hatorszag-elios", "label": "Elios-ügy (Tiborcz István, OLAF)" },
-                            { "id": "korrupcio-hatorszag-letelepedesi", "label": "Letelepedési kötvények (Rogán Antal)" },
-                            { "id": "korrupcio-hatorszag-meszaros", "label": "Mészáros Lőrinc vagyonosodása" },
-                            { "id": "korrupcio-hatorszag-gnap", "label": "G-nap (Simicska Lajos szakítása)" }
+                            {
+                              "id": "korrupcio-hatorszag-elios",
+                              "label": "Elios-ügy (Tiborcz István, OLAF)",
+                              "date": "2018.01.12"
+                            },
+                            {
+                              "id": "korrupcio-hatorszag-letelepedesi",
+                              "label": "Letelepedési kötvények (Rogán Antal)",
+                              "date": "2012.12.11"
+                            },
+                            {
+                              "id": "korrupcio-hatorszag-meszaros",
+                              "label": "Mészáros Lőrinc vagyonosodása"
+                            },
+                            {
+                              "id": "korrupcio-hatorszag-gnap",
+                              "label": "G-nap (Simicska Lajos szakítása)",
+                              "date": "2015.02.06"
+                            }
                           ]
                         },
-                        { 
-                          "id": "korrupcio-penzugyi", 
+                        {
+                          "id": "korrupcio-penzugyi",
                           "label": "Pénzügyi visszaélések",
                           "children": [
-                            { "id": "korrupcio-penzugyi-mnb", "label": "MNB-alapítványok vagyonvesztése" },
-                            { "id": "korrupcio-penzugyi-quaestor", "label": "Quaestor-csőd (Fiktív kötvények)" },
-                            { "id": "korrupcio-penzugyi-kitiltasi", "label": "Kitíltási botrány (NAV, Bunge-ügy)" },
-                            { "id": "korrupcio-penzugyi-pm", "label": "Pénzügyminisztériumi vesztegetési botrány" }
+                            {
+                              "id": "korrupcio-penzugyi-mnb",
+                              "label": "MNB-alapítványok vagyonvesztése"
+                            },
+                            {
+                              "id": "korrupcio-penzugyi-quaestor",
+                              "label": "Quaestor-csőd (Fiktív kötvények)",
+                              "date": "2015.03.09"
+                            },
+                            {
+                              "id": "korrupcio-penzugyi-kitiltasi",
+                              "label": "Kitíltási botrány (NAV, Bunge-ügy)",
+                              "date": "2014.10.16"
+                            },
+                            {
+                              "id": "korrupcio-penzugyi-pm",
+                              "label": "Pénzügyminisztériumi vesztegetési botrány",
+                              "date": "2022.04.20"
+                            }
                           ]
                         },
-                        { "id": "korrupcio-trafik", "label": "Trafikmutyi (Dohánykoncessziók)" },
-                        { "id": "korrupcio-csengeri", "label": "Csengeri örökösnő (Kósa Lajos)" },
-                        { "id": "korrupcio-diplomata", "label": "Diplomata útlevelek osztogatása" }
+                        {
+                          "id": "korrupcio-trafik",
+                          "label": "Trafikmutyi (Dohánykoncessziók)",
+                          "date": "2013.04.22"
+                        },
+                        {
+                          "id": "korrupcio-csengeri",
+                          "label": "Csengeri örökösnő (Kósa Lajos)"
+                        },
+                        {
+                          "id": "korrupcio-diplomata",
+                          "label": "Diplomata útlevelek osztogatása"
+                        }
                       ]
                     },
-                    { 
-                      "id": "oszod-ner-moralis", 
+                    {
+                      "id": "oszod-ner-moralis",
                       "label": "Morális és igazszágszolgáltatási válság (2021-2026)",
                       "children": [
-                        { 
-                          "id": "moralis-kegyelem", 
+                        {
+                          "id": "moralis-kegyelem",
                           "label": "Bicskei kegyelmi botrány és a NER bukása",
                           "children": [
-                            { 
-                              "id": "moralis-kegyelem-botrany", 
+                            {
+                              "id": "moralis-kegyelem-botrany",
                               "label": "A kegyelmi botrány (2024. február)",
                               "children": [
-                                { 
-                                  "id": "moralis-kegyelem-botrany-novak", 
+                                {
+                                  "id": "moralis-kegyelem-botrany-novak",
                                   "label": "Novák Katalin és Varga Judit lemondása",
                                   "children": [
                                     {
                                       "id": "kegyelem-botrany-partizan",
                                       "label": "Partizán: Magyar Péter - Az első interjú (2024 február 11.)",
                                       "children": [
-                                        { 
-                                          "id": "kegyelem-botrany-mp", 
+                                        {
+                                          "id": "kegyelem-botrany-mp",
                                           "label": "Magyar Péter felemelkedése és szakítása a hatalommal (2024. tavasz)",
                                           "children": [
-                                            { "id": "mp-lemondas", "label": "Lemondás minden állami tisztségről a kegyelmi botrány hatására." },
-                                            { "id": "mp-interju", "label": "A történelmi Partizán-interjú, valamint a belső korrupció éles bírálata." },
-                                            { 
-                                              "id": "mp-volner", 
+                                            {
+                                              "id": "mp-lemondas",
+                                              "label": "Lemondás minden állami tisztségről a kegyelmi botrány hatására."
+                                            },
+                                            {
+                                              "id": "mp-interju",
+                                              "label": "A történelmi Partizán-interjú, valamint a belső korrupció éles bírálata."
+                                            },
+                                            {
+                                              "id": "mp-volner",
                                               "label": "Völner-Schadl ügy",
                                               "children": [
-                                                { "id": "volner-vegrehajtoi", "label": "Végrehajtói korrupciós hálózat" },
-                                                { "id": "volner-varga", "label": "Varga Judit hangfelvétele (Tóni, Barbara, Ádám)" }
-                                              ]
+                                                {
+                                                  "id": "volner-vegrehajtoi",
+                                                  "label": "Végrehajtói korrupciós hálózat"
+                                                },
+                                                {
+                                                  "id": "volner-varga",
+                                                  "label": "Varga Judit hangfelvétele (Tóni, Barbara, Ádám)",
+                                                  "date": "2024.03.26"
+                                                }
+                                              ],
+                                              "date": "2021.12.07"
                                             },
-                                            { "id": "mp-talpra", "label": "A Talpra Magyarok Közössége mozgalom megalapítása a március 15-i százezres tüntetésen." },
-                                            { 
-                                              "id": "mp-tisza", 
+                                            {
+                                              "id": "mp-talpra",
+                                              "label": "A Talpra Magyarok Közössége mozgalom megalapítása a március 15-i százezres tüntetésen.",
+                                              "date": "2024.03.15"
+                                            },
+                                            {
+                                              "id": "mp-tisza",
                                               "label": "A Tisza Párt sikerei és hálózatépítése (2024. nyár – 2025)",
                                               "children": [
-                                                { "id": "tisza-csatlakozas", "label": "Csatlakozás a TISZA Párthoz, majd 29,6%-os eredmény az EP- és önkormányzati választásokon, amivel a Fidesz első számú kihívójává válnak." },
-                                                { 
-                                                  "id": "tisza-szervezet", 
+                                                {
+                                                  "id": "tisza-csatlakozas",
+                                                  "label": "Csatlakozás a TISZA Párthoz, majd 29,6%-os eredmény az EP- és önkormányzati választásokon, amivel a Fidesz első számú kihívójává válnak.",
+                                                  "date": "2024.04.10"
+                                                },
+                                                {
+                                                  "id": "tisza-szervezet",
                                                   "label": "Szervezetépítés",
                                                   "children": [
-                                                    { "id": "tisza-szigetek", "label": "Tisza szigetek alapítása" },
-                                                    { "id": "tisza-app", "label": "„Tisza Világ” applikáció elindítása." }
+                                                    {
+                                                      "id": "tisza-szigetek",
+                                                      "label": "Tisza szigetek alapítása"
+                                                    },
+                                                    {
+                                                      "id": "tisza-app",
+                                                      "label": "„Tisza Világ” applikáció elindítása."
+                                                    }
                                                   ]
                                                 },
-                                                { 
-                                                  "id": "tisza-ellencsapas", 
+                                                {
+                                                  "id": "tisza-ellencsapas",
                                                   "label": "A hatalom ellencsapásai",
                                                   "children": [
-                                                    { 
-                                                      "id": "tisza-titkosszolgalat", 
+                                                    {
+                                                      "id": "tisza-titkosszolgalat",
                                                       "label": "Titkosszolgálati akciók a párt informatikai rendszere ellen:",
                                                       "children": [
-                                                        { "id": "tisza-mediaworks", "label": "Mediaworks adatvédelmi bírság (Tisza-lista)" }
+                                                        {
+                                                          "id": "tisza-mediaworks",
+                                                          "label": "Mediaworks adatvédelmi bírság (Tisza-lista)",
+                                                          "date": "2024.08.01"
+                                                        }
                                                       ]
                                                     },
-                                                    { "id": "tisza-vogel", "label": "Vogel Evelin-féle zsarolási hangfelvételek (Vogelgate)" }
+                                                    {
+                                                      "id": "tisza-vogel",
+                                                      "label": "Vogel Evelin-féle zsarolási hangfelvételek (Vogelgate)",
+                                                      "date": "2024.11.11"
+                                                    }
                                                   ]
                                                 }
-                                              ]
+                                              ],
+                                              "date": "2024.06.09"
                                             },
-                                            { 
-                                              "id": "mp-kormanyvaltas", 
+                                            {
+                                              "id": "mp-kormanyvaltas",
                                               "label": "A 2026-os országgyűlési választás és a teljes kormányváltás",
                                               "children": [
-                                                { "id": "kormanyvaltas-gyozelem", "label": "A Tisza Párt elsöprő, kétharmados győzelme az áprilisi választáson." },
-                                                { "id": "kormanyvaltas-lemondas", "label": "Magyar Péter a győzelem éjszakáján lemondásra szólítja fel a „rendszer tartóoszlopait”." },
-                                                { "id": "kormanyvaltas-alakitas", "label": "Kormányalakítás: Magyar Péter miniszterelnöki beiktatása és az új kabinet megalakulása (2026. május)." },
-                                                { 
-                                                  "id": "kormanyvaltas-szimbolikus", 
+                                                {
+                                                  "id": "kormanyvaltas-gyozelem",
+                                                  "label": "A Tisza Párt elsöprő, kétharmados győzelme az áprilisi választáson.",
+                                                  "date": "2026.04.12"
+                                                },
+                                                {
+                                                  "id": "kormanyvaltas-lemondas",
+                                                  "label": "Magyar Péter a győzelem éjszakáján lemondásra szólítja fel a „rendszer tartóoszlopait”."
+                                                },
+                                                {
+                                                  "id": "kormanyvaltas-alakitas",
+                                                  "label": "Kormányalakítás: Magyar Péter miniszterelnöki beiktatása és az új kabinet megalakulása (2026. május).",
+                                                  "date": "2026.05.25"
+                                                },
+                                                {
+                                                  "id": "kormanyvaltas-szimbolikus",
                                                   "label": "Szimbolikus lezárás",
                                                   "children": [
-                                                    { "id": "szimbolikus-eu", "label": "EU-s pénzek visszaszerzése" },
-                                                    { "id": "szimbolikus-bocsanat", "label": "Magyar Péter bocsánatot kér az előző kormány nevében is az elmúlt 16 évért" }
+                                                    {
+                                                      "id": "szimbolikus-eu",
+                                                      "label": "EU-s pénzek visszaszerzése"
+                                                    },
+                                                    {
+                                                      "id": "szimbolikus-bocsanat",
+                                                      "label": "Magyar Péter bocsánatot kér az előző kormány nevében is az elmúlt 16 évért"
+                                                    }
                                                   ]
                                                 }
                                               ]
                                             }
                                           ]
                                         }
-                                      ]
+                                      ],
+                                      "date": "2024.02.11"
                                     }
-                                  ]
+                                  ],
+                                  "date": "2024.02.10"
                                 },
-                                { "id": "moralis-kegyelem-botrany-balog", "label": "Balog Zoltán lobbija (K. Endre)" }
+                                {
+                                  "id": "moralis-kegyelem-botrany-balog",
+                                  "label": "Balog Zoltán lobbija (K. Endre)"
+                                }
                               ]
                             },
-                            { 
-                              "id": "moralis-kegyelem-szolo", 
+                            {
+                              "id": "moralis-kegyelem-szolo",
                               "label": "A Szőlő utcai javítóintézet ügye (2025–2026)",
                               "children": [
-                                { "id": "moralis-kegyelem-szolo-hasonlosag", "label": "A kegyelmi ügyet kirobbantó „Vidéki prókátor” rávilágított az eltussolások és a rendszerszintű felelősséghárítás hasonlóságaira a két eset között." },
-                                { "id": "moralis-kegyelem-szolo-letartoztatas", "label": "Juhász Péter Pál igazgató letartóztatása." },
-                                { "id": "moralis-kegyelem-szolo-bezar", "label": "A kormány 2026 januárjában jogutód nélkül bezárja a Szőlő utcai intézményt." }
+                                {
+                                  "id": "moralis-kegyelem-szolo-hasonlosag",
+                                  "label": "A kegyelmi ügyet kirobbantó „Vidéki prókátor” rávilágított az eltussolások és a rendszerszintű felelősséghárítás hasonlóságaira a két eset között."
+                                },
+                                {
+                                  "id": "moralis-kegyelem-szolo-letartoztatas",
+                                  "label": "Juhász Péter Pál igazgató letartóztatása.",
+                                  "date": "2025.10.01"
+                                },
+                                {
+                                  "id": "moralis-kegyelem-szolo-bezar",
+                                  "label": "A kormány 2026 januárjában jogutód nélkül bezárja a Szőlő utcai intézményt.",
+                                  "date": "2026.01.01"
+                                }
                               ]
                             }
-                          ]
+                          ],
+                          "date": "2024.02.02"
                         },
-                        { "id": "moralis-sulyok", "label": "Sulyok Tamás földmaffia-ügye (Zsebszerződések)" },
-                        { "id": "moralis-gyorgy", "label": "Győrggy Balázs bántalmazási ügye" }
+                        {
+                          "id": "moralis-sulyok",
+                          "label": "Sulyok Tamás földmaffia-ügye (Zsebszerződések)",
+                          "date": "2024.05.22"
+                        },
+                        {
+                          "id": "moralis-gyorgy",
+                          "label": "Győrggy Balázs bántalmazási ügye",
+                          "date": "2024.08.23"
+                        }
                       ]
                     },
-                    { 
-                      "id": "oszod-ner-intezmenyi", 
+                    {
+                      "id": "oszod-ner-intezmenyi",
                       "label": "Intézményi és alkotmányos erózió (2010-2021)",
                       "children": [
-                        { "id": "intezmenyi-magannyugdij", "label": "Magánnyugdíjakpénztárak államosítása" },
-                        { "id": "intezmenyi-schmitt", "label": "Schmitt Pál plágiumügye" },
-                        { "id": "intezmenyi-safarov", "label": "Safarov-kiadatás (Baltás gyilkos)" },
-                        { "id": "intezmenyi-ceu", "label": "CEU és civil szerkezetek vegzálása" },
-                        { 
-                          "id": "intezmenyi-meghatralas", 
+                        {
+                          "id": "intezmenyi-magannyugdij",
+                          "label": "Magánnyugdíjakpénztárak államosítása",
+                          "date": "2010.12.13"
+                        },
+                        {
+                          "id": "intezmenyi-schmitt",
+                          "label": "Schmitt Pál plágiumügye",
+                          "date": "2012.01.11"
+                        },
+                        {
+                          "id": "intezmenyi-safarov",
+                          "label": "Safarov-kiadatás (Baltás gyilkos)",
+                          "date": "2012.08.31"
+                        },
+                        {
+                          "id": "intezmenyi-ceu",
+                          "label": "CEU és civil szerkezetek vegzálása"
+                        },
+                        {
+                          "id": "intezmenyi-meghatralas",
                           "label": "Kényszerű kormányzati meghátrálások",
                           "children": [
-                            { "id": "intezmenyi-meghatralas-netado", "label": "Internetadó elleni tüntetések" },
-                            { "id": "intezmenyi-meghatralas-boltzar", "label": "Vasárnapi boltzár eltörlése" },
-                            { "id": "intezmenyi-meghatralas-nolimpia", "label": "NOlimpia kampány" }
+                            {
+                              "id": "intezmenyi-meghatralas-netado",
+                              "label": "Internetadó elleni tüntetések",
+                              "date": "2014.10.26"
+                            },
+                            {
+                              "id": "intezmenyi-meghatralas-boltzar",
+                              "label": "Vasárnapi boltzár eltörlése",
+                              "date": "2016.04.12"
+                            },
+                            {
+                              "id": "intezmenyi-meghatralas-nolimpia",
+                              "label": "NOlimpia kampány"
+                            }
                           ]
                         }
                       ]
@@ -184,103 +339,644 @@
                 }
               ]
             },
-            { 
-              "id": "oszod-tarsadalmi-kovetkezmeny", 
+            {
+              "id": "oszod-tarsadalmi-kovetkezmeny",
               "label": "Társadalmi és strukturális következmények",
               "children": [
-                { "id": "oszod-tarsadalom-polarizacio", "label": "A politikai elit végletes polarizációja" },
-                { "id": "oszod-tarsadalom-jobbratolodas", "label": "Választói eltolódás: a magyar politika és a választópolgárok pártpreferenciáinak éles jobbratolódása." },
-                { "id": "oszod-tarsadalom-radikalisok", "label": "A radikális jobboldal megerősödése és intézményesülése" }
+                {
+                  "id": "oszod-tarsadalom-polarizacio",
+                  "label": "A politikai elit végletes polarizációja"
+                },
+                {
+                  "id": "oszod-tarsadalom-jobbratolodas",
+                  "label": "Választói eltolódás: a magyar politika és a választópolgárok pártpreferenciáinak éles jobbratolódása."
+                },
+                {
+                  "id": "oszod-tarsadalom-radikalisok",
+                  "label": "A radikális jobboldal megerősödése és intézményesülése"
+                }
               ]
             },
-            { 
-              "id": "oszod-utcai-eroszak", 
+            {
+              "id": "oszod-utcai-eroszak",
               "label": "A kirobbanás és az utcai erőszak (2006. ősz)",
               "children": [
-                { "id": "oszod-eroszak-kiszivargas", "label": "Gyurcsány Ferenc miniszterelnök zárt körű, az MSZP-frakció előtt tartott beszédének kiszivárgása (2006. szeptember)" },
-                { "id": "oszod-eroszak-tuntetesek", "label": "Tömeges, utcai erőszakba torkolló tüntetések, zavargások és rendőri túlkapások" }
+                {
+                  "id": "oszod-eroszak-kiszivargas",
+                  "label": "Gyurcsány Ferenc miniszterelnök zárt körű, az MSZP-frakció előtt tartott beszédének kiszivárgása (2006. szeptember)",
+                  "date": "2006.09.17"
+                },
+                {
+                  "id": "oszod-eroszak-tuntetesek",
+                  "label": "Tömeges, utcai erőszakba torkolló tüntetések, zavargások és rendőri túlkapások",
+                  "date": "2006.09.17"
+                }
               ]
             }
           ]
         },
-        { 
-          "id": "bkv-botrany", 
+        {
+          "id": "bkv-botrany",
           "label": "BKV-botrányok",
           "children": [
-            { "id": "nokiasdoboz", "label": "Nokiásdoboz (Hagyó Miklós)" },
-            { "id": "vegkielegitesek", "label": "Végkielégítések (Szalainé)" },
-            { "id": "buszbeszerzes", "label": "Buszbeszerzési tenderek" }
+            {
+              "id": "nokiasdoboz",
+              "label": "Nokiásdoboz (Hagyó Miklós)",
+              "date": "2010.03.06"
+            },
+            {
+              "id": "vegkielegitesek",
+              "label": "Végkielégítések (Szalainé)"
+            },
+            {
+              "id": "buszbeszerzes",
+              "label": "Buszbeszerzési tenderek"
+            }
           ]
         },
-        { "id": "zuschlag-ugy", "label": "Zuschlag-ügy (Fiktív alapítványok)" },
-        { "id": "sukoro", "label": "Sukorói kaszinóprojekt (Földcsere)" },
-        { "id": "mvm-offshore", "label": "MVM-offshore utalások (Kocsis István)" }
+        {
+          "id": "zuschlag-ugy",
+          "label": "Zuschlag-ügy (Fiktív alapítványok)",
+          "date": "2007.09.19"
+        },
+        {
+          "id": "sukoro",
+          "label": "Sukorói kaszinóprojekt (Földcsere)"
+        },
+        {
+          "id": "mvm-offshore",
+          "label": "MVM-offshore utalások (Kocsis István)"
+        }
       ]
     },
     {
       "id": "technologia",
       "label": "Technológia és Média",
       "children": [
-        { 
-          "id": "tech-media-megfigyeles", 
+        {
+          "id": "tech-media-megfigyeles",
           "label": "Megfigyelési incidensek",
           "children": [
-            { 
-              "id": "tech-media-adatvedelem", 
+            {
+              "id": "tech-media-adatvedelem",
               "label": "Adatvédelmi mulasztások",
               "children": [
-                { "id": "tech-media-mediaworks", "label": "Mediaworks adatvédelmi bírság (Tisza-lista)" },
-                { "id": "tech-media-kreta-hack", "label": "KRÉTA-rendszer feltörése" }
+                {
+                  "id": "tech-media-mediaworks",
+                  "label": "Mediaworks adatvédelmi bírság (Tisza-lista)",
+                  "date": "2024.08.01"
+                },
+                {
+                  "id": "tech-media-kreta-hack",
+                  "label": "KRÉTA-rendszer feltörése",
+                  "date": "2022.09.18"
+                }
               ]
             },
-            { 
-              "id": "tech-media-kemszoftver", 
+            {
+              "id": "tech-media-kemszoftver",
               "label": "Kémszoftver-botrányok",
               "children": [
-                { "id": "tech-media-pegasus", "label": "Pegasus-ügy (Újságírók megfigyelése)" },
-                { "id": "tech-media-predator", "label": "Predator (Nemzetbiztonsági feketelista)" }
+                {
+                  "id": "tech-media-pegasus",
+                  "label": "Pegasus-ügy (Újságírók megfigyelése)",
+                  "date": "2021.07.18"
+                },
+                {
+                  "id": "tech-media-predator",
+                  "label": "Predator (Nemzetbiztonsági feketelista)"
+                }
               ]
             }
           ]
         },
-        { 
-          "id": "tech-media-sajto", 
+        {
+          "id": "tech-media-sajto",
           "label": "Magyar Sajtó Átrendeződése",
           "children": [
-            { 
-              "id": "sajto-index", 
+            {
+              "id": "sajto-index",
               "label": "Az Index összeomlása (2020)",
               "children": [
-                { "id": "sajto-index-gerenyi", "label": "A Gerényi-terv" },
-                { "id": "sajto-index-barometer", "label": "A „függetlenségi barométer” átállítása" },
-                { "id": "sajto-index-dull", "label": "Dull Szabolcs kirúgása" },
-                { 
-                  "id": "sajto-index-felmondas", 
+                {
+                  "id": "sajto-index-gerenyi",
+                  "label": "A Gerényi-terv"
+                },
+                {
+                  "id": "sajto-index-barometer",
+                  "label": "A „függetlenségi barométer” átállítása"
+                },
+                {
+                  "id": "sajto-index-dull",
+                  "label": "Dull Szabolcs kirúgása",
+                  "date": "2020.07.22"
+                },
+                {
+                  "id": "sajto-index-felmondas",
                   "label": "Tömeges felmondás",
                   "children": [
                     {
                       "id": "sajto-index-telex",
                       "label": "A Telex megalakulása",
                       "children": [
-                        { "id": "sajto-telex-munk", "label": "Munk Veronika távozása" },
-                        { "id": "sajto-telex-dull", "label": "Dull Szabolcs visszalépése, majd teljes távozása" }
-                      ]
+                        {
+                          "id": "sajto-telex-munk",
+                          "label": "Munk Veronika távozása"
+                        },
+                        {
+                          "id": "sajto-telex-dull",
+                          "label": "Dull Szabolcs visszalépése, majd teljes távozása"
+                        }
+                      ],
+                      "date": "2020.10.02"
+                    }
+                  ],
+                  "date": "2020.07.24"
+                }
+              ]
+            },
+            {
+              "id": "sajto-kormanyszaj",
+              "label": "A kormánypárti (propaganda) sajtó botrányai és átalakulása",
+              "children": [
+                {
+                  "id": "sajto-origo",
+                  "label": "Az Origo bedarálása és propagandakiadvánnyá alakítása (2014-től)",
+                  "children": [
+                    {
+                      "id": "sajto-origo-lefejezés",
+                      "label": "A szerkesztőség lefejezése"
+                    },
+                    {
+                      "id": "sajto-origo-perek",
+                      "label": "Tömeges sajtóperek és rágalmazás"
+                    },
+                    {
+                      "id": "sajto-origo-alhirek",
+                      "label": "Álhírek és orosz narratíva"
+                    }
+                  ],
+                  "date": "2014.06.02"
+                },
+                {
+                  "id": "sajto-kesma",
+                  "label": "A KESMA-birodalom (Közép-Európai Sajtó és Média Alapítvány) megalakulása (2018)",
+                  "children": [
+                    {
+                      "id": "sajto-kesma-monopol",
+                      "label": "A piac monopolizálása"
+                    },
+                    {
+                      "id": "sajto-kesma-verseny",
+                      "label": "A versenyhivatal megkerülése"
+                    }
+                  ],
+                  "date": "2018.11.28"
+                },
+                {
+                  "id": "sajto-megafon",
+                  "label": "Lágy cenzúra, Megafon és az állami hirdetések",
+                  "children": [
+                    {
+                      "id": "sajto-megafon-reklam",
+                      "label": "Torzított reklámpiac"
+                    },
+                    {
+                      "id": "sajto-megafon-megafon",
+                      "label": "Megafon"
+                    }
+                  ]
+                },
+                {
+                  "id": "sajto-index2026",
+                  "label": "Az Index 2026-os újabb főszerkesztői botránya",
+                  "children": [
+                    {
+                      "id": "sajto-index2026-fszerk",
+                      "label": "Fekete-Szalóky Zoltán főszerkesztőnek távoznia kellett",
+                      "date": "2026.02.01"
+                    }
+                  ]
+                },
+                {
+                  "id": "sajto-kormany-osszeomlas",
+                  "label": "A kormánypárti média összeomlásának jelei (2026)",
+                  "children": [
+                    {
+                      "id": "sajto-kormany-ai",
+                      "label": "Mesterséges intelligenciával (AI) generált, hamisított adótervet hozott le, amelyet a Tisza Pártnak tulajdonítottak"
                     }
                   ]
                 }
               ]
             },
-            { "id": "sajto-kormanyszaj", "label": "A kormánypárti (propaganda) sajtó botrányai és átalakulása" },
-            { "id": "sajto-fuggetlen", "label": "A független sajtó ellen irányuló botrányok és nyomásgyakorlás" }
+            {
+              "id": "sajto-fuggetlen",
+              "label": "A független sajtó ellen irányuló botrányok és nyomásgyakorlás",
+              "children": [
+                {
+                  "id": "sajto-fuggetlen-nepszabadsag",
+                  "label": "A Népszabadság bezárása (2016)",
+                  "date": "2016.10.08"
+                },
+                {
+                  "id": "sajto-fuggetlen-pegasus",
+                  "label": "Pegasus lehallgatási botrány (2021)",
+                  "date": "2021.07.18"
+                },
+                {
+                  "id": "sajto-fuggetlen-dollar",
+                  "label": "A \"Dollármédia\" narratíva és a Szuverenitásvédelmi Hivatal akciói"
+                },
+                {
+                  "id": "sajto-fuggetlen-finansz",
+                  "label": "A független média finanszírozási nehézségei és a posztobjektivizmus"
+                }
+              ]
+            }
           ]
         },
-        { "id": "tech-media-ekreta", "label": "Az e-Kréta alternatív klienseinek evolúciója" }
+        {
+          "id": "tech-media-ekreta",
+          "label": "Az e-Kréta alternatív klienseinek evolúciója",
+          "children": [
+            {
+              "id": "ekreta-szivacs",
+              "label": "Szivacsnapló (2018–2019) – A pionír fázis",
+              "children": [
+                {
+                  "id": "ekreta-szivacs-blokk",
+                  "label": "A Klik szerverei szándékosan elkezdték blokkolni"
+                }
+              ]
+            },
+            {
+              "id": "ekreta-filc",
+              "label": "Filc Napló (2020–2021) – A nagy siker és a letiltás",
+              "children": [
+                {
+                  "id": "ekreta-filc-szerzoi",
+                  "label": "Szerzőijogi incidensek"
+                },
+                {
+                  "id": "ekreta-filc-adatvedelem",
+                  "label": "Adatvédelmi eljárás az Állam a Filc csapata között",
+                  "date": "2021.10.01"
+                }
+              ]
+            },
+            {
+              "id": "ekreta-refilc",
+              "label": "reFilc (2021–2023) – A közösségi korszak",
+              "children": [
+                {
+                  "id": "ekreta-refilc-elavult",
+                  "label": "Elavult kód miatt eldobva"
+                },
+                {
+                  "id": "ekreta-refilc-kima",
+                  "label": "Kima nevű fejlesztő lelépet az összegyűjtött pénzzel",
+                  "date": "2023.03.01"
+                }
+              ]
+            },
+            {
+              "id": "ekreta-firka",
+              "label": "QwIT-Development és a Firka (2023–napjainkig) – Az újraírás",
+              "children": [
+                {
+                  "id": "ekreta-firka-legacy",
+                  "label": "app-legacy"
+                },
+                {
+                  "id": "ekreta-firka-naplo",
+                  "label": "Firka Napló",
+                  "children": [
+                    {
+                      "id": "ekreta-firka-app",
+                      "label": "Firka App"
+                    },
+                    {
+                      "id": "ekreta-firka-ext",
+                      "label": "Firka Extension (Chrome, Firefox)"
+                    }
+                  ],
+                  "date": "2023.09.01"
+                }
+              ]
+            },
+            {
+              "id": "ekreta-folio",
+              "label": "Folio (2025–napjainkig) – A vizuális modernizáció",
+              "children": [
+                {
+                  "id": "ekreta-folio-app",
+                  "label": "Folio App"
+                },
+                {
+                  "id": "ekreta-folio-ext",
+                  "label": "Folio Extension (Chrome, Firefox)"
+                },
+                {
+                  "id": "ekreta-folio-desktop",
+                  "label": "Folio-Desktop-App"
+                },
+                {
+                  "id": "ekreta-folio-cli",
+                  "label": "Folio-CLI"
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
       "id": "media-kultura",
       "label": "Média és Internetes kultúra",
-      "children": []
+      "children": [
+        {
+          "id": "media-minecraft",
+          "label": "Minecraft tartalomgyártók",
+          "children": [
+            {
+              "id": "media-minecraft-pgt",
+              "label": "PGT Dani (Degredáló tartalom)"
+            },
+            {
+              "id": "media-minecraft-otto",
+              "label": "TheBigO/Ottó (AI posztok, Pi-probléma)"
+            },
+            {
+              "id": "media-minecraft-rolix",
+              "label": "RolixRedstore Neked.hu ügy"
+            }
+          ]
+        },
+        {
+          "id": "media-pedofil",
+          "label": "Pedofilbotrányok",
+          "children": [
+            {
+              "id": "media-pedofil-nerdhub",
+              "label": "Nerdhub Vendel",
+              "children": [
+                {
+                  "id": "media-pedofil-nerdhub-kapcsolat",
+                  "label": "Kapcsolat egy 13-15 éves lányal"
+                },
+                {
+                  "id": "media-pedofil-nerdhub-manipulativ",
+                  "label": "Manipulatív viselkedés"
+                },
+                {
+                  "id": "media-pedofil-nerdhub-megszunt",
+                  "label": "Nerdhub mint csatorna \"megszűnt\"",
+                  "children": [
+                    {
+                      "id": "media-pedofil-nerdhub-spanok",
+                      "label": "Spanok csatorna próbálkozásai"
+                    }
+                  ],
+                  "date": "2021.11.01"
+                }
+              ],
+              "date": "2021.11.01"
+            },
+            {
+              "id": "media-pedofil-iron",
+              "label": "iRon Channel (T. Áron)"
+            },
+            {
+              "id": "media-pedofil-nabu",
+              "label": "Nabu"
+            },
+            {
+              "id": "media-pedofil-nosika",
+              "label": "Nosika"
+            }
+          ]
+        },
+        {
+          "id": "media-ytmaffia",
+          "label": "Youtube Maffia",
+          "children": [
+            {
+              "id": "media-ytmaffia-sillo",
+              "label": "Silló Család",
+              "children": [
+                {
+                  "id": "media-ytmaffia-laura",
+                  "label": "Laura és Norman",
+                  "children": [
+                    {
+                      "id": "media-ytmaffia-laura-hamis",
+                      "label": "Hamis drámák"
+                    },
+                    {
+                      "id": "media-ytmaffia-laura-csalodtam",
+                      "label": "\"Csalódtam benned\" (clickbait) videók"
+                    },
+                    {
+                      "id": "media-ytmaffia-laura-kritika",
+                      "label": "Kritika a gyermekek szerepeltetése miatt"
+                    }
+                  ]
+                },
+                {
+                  "id": "media-ytmaffia-steve",
+                  "label": "Silló Steve",
+                  "children": [
+                    {
+                      "id": "media-ytmaffia-steve-ecigi",
+                      "label": "Illegális E-cigi"
+                    },
+                    {
+                      "id": "media-ytmaffia-steve-berki",
+                      "label": "Berki Krisztián ügyek",
+                      "children": [
+                        {
+                          "id": "media-ytmaffia-steve-berki-fidesz",
+                          "label": "Fideszes kapcsolatok a kampányban"
+                        },
+                        {
+                          "id": "media-ytmaffia-steve-berki-fopolgi",
+                          "label": "A Főpolgármester-jelölti kampány (2019)"
+                        },
+                        {
+                          "id": "media-ytmaffia-steve-berki-ajanlas",
+                          "label": "Az ajánlásgyűjtési botrány (2019)",
+                          "date": "2019.09.10"
+                        },
+                        {
+                          "id": "media-ytmaffia-steve-berki-afa",
+                          "label": "Az áfacsalási botrány (2018-2019)",
+                          "date": "2019.05.27"
+                        },
+                        {
+                          "id": "media-ytmaffia-steve-berki-etelosztas",
+                          "label": "Ételosztás M. Richárd étterménél (2017)",
+                          "date": "2017.12.24"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "media-trash",
+          "label": "Trash",
+          "children": [
+            {
+              "id": "media-trash-burjan",
+              "label": "Burján Fanni"
+            },
+            {
+              "id": "media-trash-mcisti",
+              "label": "MC Isti"
+            },
+            {
+              "id": "media-trash-videomania",
+              "label": "Videómánia"
+            },
+            {
+              "id": "media-trash-herby",
+              "label": "Herby",
+              "children": [
+                {
+                  "id": "media-trash-herby-konfliktus",
+                  "label": "Konfliktusok a rajongókkal és alkoholfogyasztás"
+                },
+                {
+                  "id": "media-trash-herby-bantalmazas",
+                  "label": "Bántalmazási vádak"
+                }
+              ]
+            },
+            {
+              "id": "media-trash-handras",
+              "label": "H. András"
+            },
+            {
+              "id": "media-trash-cretins",
+              "label": "A Cretins (Kretének) botrányai",
+              "children": [
+                {
+                  "id": "media-trash-cretins-fulhallgato",
+                  "label": "A \"Fülhallgató\" dal botránya",
+                  "date": "2018.06.01"
+                },
+                {
+                  "id": "media-trash-cretins-auchan",
+                  "label": "Az Auchan pontyos medencéje"
+                }
+              ]
+            },
+            {
+              "id": "media-trash-theshowk",
+              "label": "TheShowK",
+              "children": [
+                {
+                  "id": "media-trash-theshowk-kislany",
+                  "label": "A \"Trash\" és a kislány szerepeltetése"
+                },
+                {
+                  "id": "media-trash-theshowk-elszallt",
+                  "label": "\"Elszállt\" viselkedés",
+                  "children": [
+                    {
+                      "id": "media-trash-theshowk-loves",
+                      "label": "Élő lőfegyverrel való \"bosszúlövés\" a rossz kommentelőkre",
+                      "date": "2022.12.01"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "media-trash-szabyest",
+              "label": "Szabyest"
+            },
+            {
+              "id": "media-trash-marko",
+              "label": "Markó Rebeka határait átlépő tartalmai"
+            }
+          ]
+        },
+        {
+          "id": "media-ranter",
+          "label": "A \"Ranter-háborúk\" és belső YouTube-konfliktusok (2019-2023)",
+          "children": [
+            {
+              "id": "media-ranter-resztvevok",
+              "label": "Fő Résztvevői",
+              "children": [
+                {
+                  "id": "media-ranter-sythex",
+                  "label": "Sythex"
+                },
+                {
+                  "id": "media-ranter-tyranida",
+                  "label": "Tyranida"
+                },
+                {
+                  "id": "media-ranter-iron",
+                  "label": "Iron Channel"
+                },
+                {
+                  "id": "media-ranter-raven",
+                  "label": "The Raven Croaks"
+                },
+                {
+                  "id": "media-ranter-flex",
+                  "label": "fleX"
+                },
+                {
+                  "id": "media-ranter-wbak",
+                  "label": "wbak"
+                },
+                {
+                  "id": "media-ranter-fmm",
+                  "label": "FMM"
+                }
+              ]
+            },
+            {
+              "id": "media-ranter-okok",
+              "label": "Okok",
+              "children": [
+                {
+                  "id": "media-ranter-okok-kimerules",
+                  "label": "A műfaj kimerülése"
+                },
+                {
+                  "id": "media-ranter-okok-nezettseg",
+                  "label": "Nézettséghajhászás"
+                },
+                {
+                  "id": "media-ranter-okok-maganelet",
+                  "label": "Magánéleti információk megosztása"
+                },
+                {
+                  "id": "media-ranter-okok-klikk",
+                  "label": "Klikkesedés"
+                },
+                {
+                  "id": "media-ranter-okok-kettos",
+                  "label": "Kettős mérce alkalmazása"
+                },
+                {
+                  "id": "media-ranter-okok-egoharc",
+                  "label": "Egóharcok"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

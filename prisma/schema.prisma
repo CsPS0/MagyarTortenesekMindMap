@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Node {
+  id          String   @id
+  label       String
+  description String?
+  date        String?
+  
+  parentId    String?
+  parent      Node?    @relation("NodeHierarchy", fields: [parentId], references: [id])
+  children    Node[]   @relation("NodeHierarchy")
+  
+  links       Link[]
+}
+
+model Link {
+  id     Int    @id @default(autoincrement())
+  url    String
+  nodeId String
+  node   Node   @relation(fields: [nodeId], references: [id])
+}

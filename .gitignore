@@ -36,3 +36,9 @@ next-env.d.ts
 
 # Bun
 bun.lock
+
+/src/generated/prisma
+
+# local SQLite database (created by prisma migrate / seed)
+/prisma/dev.db
+/prisma/dev.db-journal

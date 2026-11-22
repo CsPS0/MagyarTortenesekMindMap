@@ -7,6 +7,17 @@
 [![d3-hierarchy](https://img.shields.io/badge/D3-Hierarchy_3-orange?style=for-the-badge&logo=d3.js&logoColor=white)](https://d3js.org/d3-hierarchy)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
+Interaktív gondolattérkép a 2006–2026 közötti magyarországi politikai és közéleti események vizualizálásához. A projekt immáron teljesértékű Full-Stack architektúrával, adatbázissal és kibővített UI funkciókkal (MindMap 2.0) rendelkezik!
+
+## Új funkciók
+- **Nézetválasztás:** Klasszikus "Térkép" mód és teljesen új kronológiai "Idővonal" (Timeline) mód az események időrendi áttekintéséhez.
+- **Interaktív UI:** Keresőmező intelligens fókuszálással, oldalsó információs panel (Drawer), áthelyezett Mini-térkép és egyedi navigációs panel.
+- **Fejlett Navigáció:** Húzd arrébb a kártyákat és a rendszer automatikusan megjegyzi (`localStorage`) a módosításaidat! Beépítettük a Visszavonás (`Ctrl+Z`) és az Újra (`Ctrl+Y`) funkciókat is, valamint egy Reset gombot.
+- **Dinamikus fa:** Összecsukható/kinyitható ágak, melyekre azonnal reagál a D3 elrendező algoritmus. Az elrendezés ütközésvizsgálattal (collision detection) is bővült.
+- **Kép exportálás:** Egykattintásos PNG mentési lehetőség a testreszabás menüből.
+- **Vizuális tuning:** Színkódolt kártyák a hierarchiai szint alapján, sötét és világos mód támogatás, reszponzív design.
+- **Adatbázis integráció:** SQLite + Prisma ORM biztosítja a perzisztenciát egy Next.js Route Handler (`/api/mindmap`) segítségével.
+
 Interaktív, böngészőben futó gondolattérkép és adatvizualizációs alkalmazás, amely a 2006 és 2026 közötti magyarországi politikai, gazdasági és közéleti eseményeket rendszerezi és jeleníti meg összefüggő, hierarchikus gráfként.
 
 ---
@@ -49,6 +60,9 @@ A gondolattérkép az alábbi kulcsfontosságú korszakokat és politikai esemé
 | **TypeScript** | 5 | Típusbiztonságos állapot- és adatkezelés |
 | **@xyflow/react** | 12 | Node/Edge renderelés és vászoninterakciók |
 | **d3-hierarchy** | 3 | Fa-struktúrát kalkuláló elrendezési algoritmusok |
+| **Prisma** | 5 | ORM és adatbázis-kezelés |
+| **SQLite** | - | Relációs adatbázis |
+| **html-to-image** | 1.11 | PNG kép exportálás |
 | **Bun** | 1.x | Gyors csomagkezelő és futtatókörnyezet |
 
 ---
@@ -68,7 +82,13 @@ cd MagyarTortenesekMindMap
 bun install
 # vagy: npm install
 
-# 3. Fejlesztői szerver indítása
+# 3. Adatbázis inicializálása és migráció
+bunx prisma migrate dev
+
+# 4. Adatbázis feltöltése a kezdeti adatokkal (seed)
+bun run prisma/seed.ts
+
+# 5. Fejlesztői szerver indítása
 bun dev
 # vagy: npm run dev
 ```
@@ -83,31 +103,38 @@ bun start
 
 ---
 
-## Adatstruktúra és Bővítés
+## Adatbázis és Szerkesztés
 
-Az összes esemény és összefüggés a **`src/data/mindmap.json`** fájlban található, fastruktúrában:
+Az adatok immáron nem statikus JSON fájlból érkeznek, hanem az SQLite adatbázisból (`dev.db`); a kezdeti adatokat a seed a `src/data/mindmap.json` fájlból tölti be. 
+A legegyszerűbb módja az adatok (pl. dátumok, részletes leírások, linkek) szerkesztésének a **Prisma Studio** használata:
 
-```json
-{
-  "id": "root",
-  "label": "Magyarországi legfontosabb politikai és közéleti események (2006-2026)",
-  "children": [
-    {
-      "id": "partpolitika",
-      "label": "Pártpolitikai és koalíciós válságok (2006-napjaink)",
-      "children": [
-        {
-          "id": "oszodi-beszed",
-          "label": "Őszödi beszéd és 2006-os zavargások",
-          "children": []
-        }
-      ]
-    }
-  ]
+```bash
+# Prisma Studio indítása
+bunx prisma studio
+```
+Ez megnyit egy webes admin felületet, ahol kényelmesen szerkesztheted a `Node` és `Link` táblákat.
+
+### Adatstruktúra (Prisma Schema)
+
+```prisma
+model Node {
+  id          String   @id
+  label       String
+  description String?  // Opcionális részletes leírás
+  date        String?  // Opcionális dátum
+  parentId    String?
+  parent      Node?    @relation("NodeHierarchy", fields: [parentId], references: [id])
+  children    Node[]   @relation("NodeHierarchy")
+  links       Link[]   // Külső hivatkozások listája
+}
+
+model Link {
+  id     Int    @id @default(autoincrement())
+  url    String
+  nodeId String
+  node   Node   @relation(fields: [nodeId], references: [id])
 }
 ```
-
-Új kategória vagy esemény hozzáadásához elegendő a JSON fát egy új objektummal bővíteni (`id`, `label`, opcionális `children` tömb).
 
 ---
 
